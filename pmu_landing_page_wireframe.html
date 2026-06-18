@@ -1,0 +1,325 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans)}
+.wf{background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:16px;width:100%}
+.label{font-size:10px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text-secondary);margin-bottom:6px}
+.block{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:10px 14px;width:100%}
+.block.fill{background:var(--color-background-tertiary)}
+.block.accent{background:#EEEDFE;border-color:#AFA9EC}
+.block.dark-accent{background:#3C3489;border-color:#3C3489}
+.sec{margin-bottom:12px}
+.row{display:flex;gap:10px}
+.row>.block{flex:1}
+.col{display:flex;flex-direction:column;gap:8px}
+.pill{display:inline-block;background:#EEEDFE;color:#3C3489;border-radius:20px;font-size:10px;padding:2px 10px;font-weight:500;margin-right:4px;margin-bottom:4px}
+.pill.p{background:#FBEAF0;color:#72243E}
+.pill.t{background:#E1F5EE;color:#085041}
+.pill.b{background:#E6F1FB;color:#0C447C}
+.seclabel{font-size:9px;color:#534AB7;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.icon-row{display:flex;gap:8px;margin-top:6px}
+.icon-box{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 4px;border:0.5px solid var(--color-border-tertiary)}
+.icon-box i{font-size:20px;color:#534AB7}
+.icon-box span{font-size:9px;color:var(--color-text-secondary);text-align:center}
+.tag{font-size:9px;color:var(--color-text-tertiary);background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:4px;padding:1px 6px;display:inline-block}
+.divider{border:none;border-top:0.5px dashed var(--color-border-tertiary);margin:8px 0}
+.h-tiny{font-size:11px;font-weight:500;color:var(--color-text-primary)}
+.muted{font-size:10px;color:var(--color-text-secondary)}
+.nav-item{font-size:10px;color:var(--color-text-secondary);padding:0 6px}
+.cta-btn{background:#534AB7;color:#EEEDFE;font-size:10px;font-weight:500;padding:5px 12px;border-radius:20px;border:none;white-space:nowrap}
+.ghost-btn{background:transparent;color:#534AB7;font-size:10px;font-weight:500;padding:5px 12px;border-radius:20px;border:1.5px solid #534AB7;white-space:nowrap}
+.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:6px}
+.service-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:10px;position:relative}
+.service-card.featured{border:1.5px solid #7F77DD}
+.badge{font-size:8px;background:#EEEDFE;color:#534AB7;border-radius:10px;padding:2px 7px;font-weight:600}
+.img-ph{background:var(--color-background-secondary);border-radius:var(--border-radius-md);width:100%;height:60px;display:flex;align-items:center;justify-content:center;border:0.5px solid var(--color-border-tertiary);margin-bottom:6px}
+.img-ph i{font-size:22px;color:#AFA9EC}
+.star{color:#EF9F27;font-size:10px}
+.process-row{display:flex;gap:6px;margin-top:6px}
+.step{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
+.step-num{width:22px;height:22px;border-radius:50%;background:#EEEDFE;color:#534AB7;font-size:10px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.step-arrow{color:#AFA9EC;font-size:14px;display:flex;align-items:center}
+.input-ph{height:28px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:var(--color-background-secondary);width:100%;margin-bottom:6px}
+.form-row{display:flex;gap:8px;margin-bottom:6px}
+.form-row .input-ph{margin-bottom:0}
+.footer-col{flex:1;display:flex;flex-direction:column;gap:4px}
+</style>
+
+<div class="wf">
+
+  <div class="sec">
+    <div class="label">① Navbar</div>
+    <div class="block" style="display:flex;align-items:center;justify-content:space-between;padding:8px 14px;">
+      <div style="display:flex;align-items:center;gap:6px">
+        <i class="ti ti-diamond" style="font-size:18px;color:#534AB7" aria-hidden="true"></i>
+        <span style="font-size:12px;font-weight:500;color:var(--color-text-primary)">PMU Studio</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:0px">
+        <span class="nav-item">Services</span>
+        <span class="nav-item">Gallery</span>
+        <span class="nav-item">Process</span>
+        <span class="nav-item">Reviews</span>
+        <span class="nav-item">FAQ</span>
+      </div>
+      <button class="cta-btn">Book Now</button>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="label">② Hero section</div>
+    <div class="block accent" style="display:flex;gap:14px;align-items:stretch;min-height:110px">
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:8px">
+        <span class="tag">Permanent Makeup Specialists</span>
+        <div style="height:12px;background:#AFA9EC;border-radius:4px;width:75%;margin-top:4px"></div>
+        <div style="height:8px;background:#CECBF6;border-radius:4px;width:90%"></div>
+        <div style="height:8px;background:#CECBF6;border-radius:4px;width:70%"></div>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <button class="cta-btn"><i class="ti ti-calendar" aria-hidden="true"></i> Book Consultation</button>
+          <button class="ghost-btn">View Gallery</button>
+        </div>
+      </div>
+      <div style="flex:1;background:#CECBF6;border-radius:var(--border-radius-md);display:flex;align-items:center;justify-content:center;min-height:80px">
+        <div style="text-align:center">
+          <i class="ti ti-camera" style="font-size:28px;color:#3C3489" aria-hidden="true"></i>
+          <div style="font-size:9px;color:#534AB7;margin-top:4px">Hero / Before-After Image</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="label">③ Trust bar</div>
+    <div class="block fill" style="display:flex;justify-content:space-around;align-items:center;padding:8px 10px">
+      <div style="text-align:center"><div style="font-size:14px;font-weight:500;color:var(--color-text-primary)">1,200+</div><div class="muted">Happy clients</div></div>
+      <div style="width:0.5px;height:28px;background:var(--color-border-tertiary)"></div>
+      <div style="text-align:center"><div style="font-size:14px;font-weight:500;color:var(--color-text-primary)">8 yrs</div><div class="muted">Experience</div></div>
+      <div style="width:0.5px;height:28px;background:var(--color-border-tertiary)"></div>
+      <div style="text-align:center"><div style="font-size:14px;font-weight:500;color:var(--color-text-primary)">4.9 ★</div><div class="muted">Avg rating</div></div>
+      <div style="width:0.5px;height:28px;background:var(--color-border-tertiary)"></div>
+      <div style="text-align:center"><div style="font-size:14px;font-weight:500;color:var(--color-text-primary)">100%</div><div class="muted">Safe pigments</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="label">④ Services section</div>
+    <div class="block">
+      <div class="seclabel">Our PMU Services</div>
+      <div class="card-grid">
+
+        <div class="service-card featured">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px">
+            <div class="h-tiny"><i class="ti ti-arch" style="font-size:13px;color:#534AB7;margin-right:3px" aria-hidden="true"></i>PMU Brows</div>
+            <span class="badge">Popular</span>
+          </div>
+          <div class="img-ph" style="height:52px"><i class="ti ti-photo" aria-hidden="true"></i></div>
+          <div class="muted" style="margin-bottom:4px">Microblading · Powder · Combo</div>
+          <div style="display:flex;gap:4px">
+            <span class="pill">Natural look</span>
+            <span class="pill">Lasts 1–3 yrs</span>
+          </div>
+          <button class="cta-btn" style="margin-top:8px;width:100%;text-align:center">Learn more</button>
+        </div>
+
+        <div class="service-card">
+          <div class="h-tiny" style="margin-bottom:4px"><i class="ti ti-mood-happy" style="font-size:13px;color:#993556;margin-right:3px" aria-hidden="true"></i>Lip Blush</div>
+          <div class="img-ph" style="height:52px;background:#FBEAF0;border-color:#F4C0D1"><i class="ti ti-photo" style="color:#D4537E" aria-hidden="true"></i></div>
+          <div class="muted" style="margin-bottom:4px">Tint · Definition · Full lip</div>
+          <div style="display:flex;gap:4px">
+            <span class="pill p">Fuller look</span>
+            <span class="pill p">Custom shade</span>
+          </div>
+          <button class="ghost-btn" style="margin-top:8px;width:100%;text-align:center">Learn more</button>
+        </div>
+
+        <div class="service-card">
+          <div class="h-tiny" style="margin-bottom:4px"><i class="ti ti-eye" style="font-size:13px;color:#185FA5;margin-right:3px" aria-hidden="true"></i>Eyeliner PMU</div>
+          <div class="img-ph" style="height:52px;background:#E6F1FB;border-color:#B5D4F4"><i class="ti ti-photo" style="color:#378ADD" aria-hidden="true"></i></div>
+          <div class="muted" style="margin-bottom:4px">Top line · Waterline · Winged</div>
+          <div style="display:flex;gap:4px">
+            <span class="pill b">Smudge-free</span>
+            <span class="pill b">Wake-up ready</span>
+          </div>
+          <button class="ghost-btn" style="margin-top:8px;width:100%;text-align:center">Learn more</button>
+        </div>
+
+        <div class="service-card" style="border-style:dashed;opacity:.75">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px">
+            <div class="h-tiny"><i class="ti ti-circle-dotted" style="font-size:13px;color:#3B6D11;margin-right:3px" aria-hidden="true"></i>Scalp Micropigmentation</div>
+            <span style="font-size:8px;background:#EAF3DE;color:#3B6D11;border-radius:10px;padding:2px 7px;font-weight:600">Coming Soon</span>
+          </div>
+          <div class="img-ph" style="height:52px;background:#EAF3DE;border-color:#C0DD97"><i class="ti ti-photo" style="color:#639922" aria-hidden="true"></i></div>
+          <div class="muted">Hair follicle simulation · Density fill</div>
+          <div style="display:flex;gap:4px;margin-top:4px">
+            <span class="pill t">Non-surgical</span>
+            <span class="pill t">Notify me</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="label">⑤ Before / After gallery</div>
+    <div class="block">
+      <div class="seclabel">Results gallery</div>
+      <div style="display:flex;gap:6px;margin-top:6px">
+        <span class="pill" style="cursor:pointer">All</span>
+        <span class="pill p" style="cursor:pointer">Brows</span>
+        <span class="pill p" style="cursor:pointer">Lips</span>
+        <span class="pill b" style="cursor:pointer">Eyeliner</span>
+        <span class="pill t" style="cursor:pointer">Scalp</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px">
+        <div style="aspect-ratio:1;background:var(--color-background-secondary);border-radius:var(--border-radius-md);display:flex;flex-direction:column;align-items:center;justify-content:center;border:0.5px solid var(--color-border-tertiary)">
+          <i class="ti ti-camera" style="font-size:16px;color:#AFA9EC" aria-hidden="true"></i>
+          <span style="font-size:8px;color:var(--color-text-tertiary);margin-top:3px">Before / After</span>
+        </div>
+        <div style="aspect-ratio:1;background:var(--color-background-secondary);border-radius:var(--border-radius-md);display:flex;flex-direction:column;align-items:center;justify-content:center;border:0.5px solid var(--color-border-tertiary)">
+          <i class="ti ti-camera" style="font-size:16px;color:#AFA9EC" aria-hidden="true"></i>
+          <span style="font-size:8px;color:var(--color-text-tertiary);margin-top:3px">Before / After</span>
+        </div>
+        <div style="aspect-ratio:1;background:var(--color-background-secondary);border-radius:var(--border-radius-md);display:flex;flex-direction:column;align-items:center;justify-content:center;border:0.5px solid var(--color-border-tertiary)">
+          <i class="ti ti-camera" style="font-size:16px;color:#AFA9EC" aria-hidden="true"></i>
+          <span style="font-size:8px;color:var(--color-text-tertiary);margin-top:3px">Before / After</span>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:8px"><button class="ghost-btn">View all photos</button></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="label">⑥ Our process</div>
+    <div class="block">
+      <div class="seclabel">How it works</div>
+      <div class="process-row">
+        <div class="step">
+          <div class="step-num">1</div>
+          <i class="ti ti-message-circle" style="font-size:16px;color:#534AB7" aria-hidden="true"></i>
+          <span class="muted">Free consult</span>
+        </div>
+        <div class="step-arrow"><i class="ti ti-arrow-right" aria-hidden="true"></i></div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <i class="ti ti-brush" style="font-size:16px;color:#534AB7" aria-hidden="true"></i>
+          <span class="muted">Design mapping</span>
+        </div>
+        <div class="step-arrow"><i class="ti ti-arrow-right" aria-hidden="true"></i></div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <i class="ti ti-pencil" style="font-size:16px;color:#534AB7" aria-hidden="true"></i>
+          <span class="muted">PMU procedure</span>
+        </div>
+        <div class="step-arrow"><i class="ti ti-arrow-right" aria-hidden="true"></i></div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <i class="ti ti-heart" style="font-size:16px;color:#534AB7" aria-hidden="true"></i>
+          <span class="muted">Aftercare & touch-up</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="label">⑦ Testimonials</div>
+    <div class="block">
+      <div class="seclabel">What clients say</div>
+      <div class="row" style="margin-top:6px">
+        <div class="block fill" style="flex:1;padding:8px 10px">
+          <div class="star">★★★★★</div>
+          <div style="height:6px;background:var(--color-border-tertiary);border-radius:3px;width:90%;margin:5px 0 3px"></div>
+          <div style="height:6px;background:var(--color-border-tertiary);border-radius:3px;width:70%;margin-bottom:5px"></div>
+          <div class="muted">— Client name, Brows</div>
+        </div>
+        <div class="block fill" style="flex:1;padding:8px 10px">
+          <div class="star">★★★★★</div>
+          <div style="height:6px;background:var(--color-border-tertiary);border-radius:3px;width:85%;margin:5px 0 3px"></div>
+          <div style="height:6px;background:var(--color-border-tertiary);border-radius:3px;width:60%;margin-bottom:5px"></div>
+          <div class="muted">— Client name, Lips</div>
+        </div>
+        <div class="block fill" style="flex:1;padding:8px 10px">
+          <div class="star">★★★★★</div>
+          <div style="height:6px;background:var(--color-border-tertiary);border-radius:3px;width:80%;margin:5px 0 3px"></div>
+          <div style="height:6px;background:var(--color-border-tertiary);border-radius:3px;width:65%;margin-bottom:5px"></div>
+          <div class="muted">— Client name, Eyeliner</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="label">⑧ FAQ accordion</div>
+    <div class="block">
+      <div class="seclabel">Frequently asked questions</div>
+      <div style="margin-top:6px;display:flex;flex-direction:column;gap:6px">
+        <div class="block fill" style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px">
+          <span class="muted">Does PMU hurt?</span>
+          <i class="ti ti-chevron-down" style="font-size:14px;color:var(--color-text-secondary)" aria-hidden="true"></i>
+        </div>
+        <div class="block fill" style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px">
+          <span class="muted">How long does it last?</span>
+          <i class="ti ti-chevron-down" style="font-size:14px;color:var(--color-text-secondary)" aria-hidden="true"></i>
+        </div>
+        <div class="block fill" style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px">
+          <span class="muted">What's the aftercare process?</span>
+          <i class="ti ti-chevron-down" style="font-size:14px;color:var(--color-text-secondary)" aria-hidden="true"></i>
+        </div>
+        <div class="block fill" style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px">
+          <span class="muted">Is it safe for sensitive skin?</span>
+          <i class="ti ti-chevron-down" style="font-size:14px;color:var(--color-text-secondary)" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="label">⑨ Booking / Contact CTA</div>
+    <div class="block accent" style="text-align:center;padding:18px 14px">
+      <div class="seclabel" style="text-align:center">Book your appointment</div>
+      <div style="height:8px;background:#AFA9EC;border-radius:4px;width:55%;margin:6px auto 10px"></div>
+      <div class="form-row">
+        <div class="input-ph" style="margin-bottom:0"></div>
+        <div class="input-ph" style="margin-bottom:0"></div>
+      </div>
+      <div class="input-ph" style="margin-top:6px"></div>
+      <div class="input-ph"></div>
+      <button class="cta-btn" style="width:100%;padding:8px;font-size:11px;margin-top:2px"><i class="ti ti-calendar-plus" aria-hidden="true"></i> Confirm Booking</button>
+    </div>
+  </div>
+
+  <div class="sec" style="margin-bottom:0">
+    <div class="label">⑩ Footer</div>
+    <div class="block fill" style="display:flex;gap:16px;padding:12px 14px">
+      <div class="footer-col">
+        <div class="h-tiny"><i class="ti ti-diamond" style="font-size:13px;color:#534AB7;margin-right:3px" aria-hidden="true"></i>PMU Studio</div>
+        <div class="muted">Your tagline here</div>
+        <div style="display:flex;gap:8px;margin-top:4px">
+          <i class="ti ti-brand-instagram" style="font-size:16px;color:#D4537E" aria-hidden="true"></i>
+          <i class="ti ti-brand-facebook" style="font-size:16px;color:#378ADD" aria-hidden="true"></i>
+          <i class="ti ti-brand-tiktok" style="font-size:16px;color:var(--color-text-secondary)" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="h-tiny">Services</div>
+        <div class="muted">PMU Brows</div>
+        <div class="muted">Lip Blush</div>
+        <div class="muted">Eyeliner PMU</div>
+        <div class="muted">Scalp SMP</div>
+      </div>
+      <div class="footer-col">
+        <div class="h-tiny">Studio</div>
+        <div class="muted">Gallery</div>
+        <div class="muted">About us</div>
+        <div class="muted">FAQ</div>
+        <div class="muted">Careers</div>
+      </div>
+      <div class="footer-col">
+        <div class="h-tiny">Contact</div>
+        <div class="muted"><i class="ti ti-phone" style="font-size:11px" aria-hidden="true"></i> +91 xxxxxx</div>
+        <div class="muted"><i class="ti ti-mail" style="font-size:11px" aria-hidden="true"></i> hello@pmu.in</div>
+        <div class="muted"><i class="ti ti-map-pin" style="font-size:11px" aria-hidden="true"></i> Your city</div>
+      </div>
+    </div>
+  </div>
+
+</div>
