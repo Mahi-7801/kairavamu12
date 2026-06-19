@@ -585,6 +585,96 @@ function App() {
       price: '₹4,000',
       range: '₹4,000 - ₹6,500',
       image: '/pmu-lip1.jpg'
+    },
+    {
+      id: 'laser-hair-reduction',
+      title: 'Laser Hair Reduction',
+      category: 'Hair & Scalp',
+      badge: 'Permanent Reduction',
+      desc: 'Long term hair reduction with no ingrown hair or skin darkening. Saves time and effort.',
+      bullets: [
+        'Long Term Hair Reduction',
+        'No Ingrown Hair or Skin Darkening',
+        'Saves Time and Effort',
+        'Safe for All Skin Types',
+        'Smooth & Hair-Free Skin'
+      ],
+      price: '₹1,000',
+      range: '₹1,000 - ₹30,000 / Session',
+      offer: 'Up To 40% OFF',
+      image: '/laser-uhr2.jpg'
+    },
+    {
+      id: 'hair-gfc',
+      title: 'Hair GFC Therapy',
+      category: 'Hair & Scalp',
+      badge: 'Growth Factor',
+      desc: 'Safe and natural treatment that reduces hair fall and promotes hair regrowth and density.',
+      bullets: [
+        'Reduces Hair Fall',
+        'Promotes Hair Regrowth & Density',
+        'Safe & Natural Treatment',
+        'Stimulates Hair Follicles',
+        'Non-Surgical Solution'
+      ],
+      price: '₹5,000',
+      range: '₹5,000 - ₹10,000 / Session',
+      offer: 'Up To 40% OFF',
+      image: '/hair-gfc.jpg'
+    },
+    {
+      id: 'pmu-eyebrows',
+      title: 'PMU Eyebrows',
+      category: 'PMU & Permanent Makeup',
+      badge: 'Perfect Shape',
+      desc: 'Saves time everyday with perfect shape, symmetry and long-lasting smudgeproof results.',
+      bullets: [
+        'Saves Time Everyday',
+        'Perfect Shape & Symmetry',
+        'Long Lasting & Smudgeproof',
+        'Microblading/Ombre/Combination',
+        'Natural Looking Results'
+      ],
+      price: '₹20,000',
+      range: '₹20,000 - ₹40,000',
+      offer: 'Up To 25% OFF',
+      image: '/pmu-eyebrows1.jpg'
+    },
+    {
+      id: 'pmu-lipblush',
+      title: 'PMU Lipblush',
+      category: 'PMU & Permanent Makeup',
+      badge: 'Lip Enhancement',
+      desc: 'Defines lip borders and enhances natural lip colour for a long lasting and low maintenance look.',
+      bullets: [
+        'Defines Lip Borders',
+        'Enhances Natural Lip Colour',
+        'Long Lasting & Low Maintenance',
+        'Pigmentation Correction',
+        'Natural Finish'
+      ],
+      price: '₹20,000',
+      range: '₹20,000 - ₹40,000',
+      offer: 'Up To 25% OFF',
+      image: '/pmu-lip1.jpg'
+    },
+    {
+      id: 'scalp-micropigmentation',
+      title: 'Scalp Micropigmentation',
+      category: 'Hair & Scalp',
+      badge: 'Non-Surgical',
+      desc: 'Instant fuller hair look with quick results. Non-surgical, low maintenance and long lasting.',
+      bullets: [
+        'Instant Fuller Hair Look',
+        'Quick Results, Non-Surgical',
+        'Low Maintenance & Long Lasting',
+        'Customized Treatment',
+        'Natural Appearance'
+      ],
+      price: '₹20,000',
+      range: '₹20,000 - ₹1,00,000',
+      offer: '',
+      image: '/hair-transplant.jpg'
     }
   ]
 
@@ -1208,7 +1298,7 @@ function App() {
           {/* Filters Bar Wrapper */}
           <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
             <div className="filter-tabs">
-              {['All', 'Skin Laser & Glow', 'Scar & Texture', 'Pigmentation & Glow'].map((tab) => (
+              {['All', 'Skin Laser & Glow', 'Scar & Texture', 'Pigmentation & Glow', 'Hair & Scalp', 'PMU & Permanent Makeup'].map((tab) => (
                 <button
                   key={tab}
                   className={`filter-tab ${treatmentFilter === tab ? 'active' : ''}`}
