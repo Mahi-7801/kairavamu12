@@ -3222,6 +3222,7 @@ function App() {
             gap: '12px'
           }}>
             <span>© 2026 Kairavam Advanced Skin &amp; Laser Clinic. All rights reserved.</span>
+            <span>Powered by Digital Verto</span>
             <div className="row" style={{ gap: '16px' }}>
               <span style={{ cursor: 'pointer' }}>Privacy Policy</span>
               <span style={{ cursor: 'pointer' }}>Terms of Service</span>
