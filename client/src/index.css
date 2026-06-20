@@ -3758,6 +3758,24 @@ select.form-control option {
   }
 }
 
+@keyframes dvHandWave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+}
+
 @media (max-width: 768px) {
   .video-modal-embed {
     aspect-ratio: 9 / 16;
